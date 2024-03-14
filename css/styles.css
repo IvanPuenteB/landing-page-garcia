@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+  max-width: 974px;
+  margin: auto;
+}
+
+header {
+    color: white;
+  background: rgb(55, 14, 166);
+  background: linear-gradient(
+    138deg,
+    rgba(55, 14, 166, 1) 0%,
+    rgba(162, 67, 221, 1) 50%,
+    rgba(210, 139, 243, 1) 96%
+  );
+}
+
+header #menu-moviles{
+    display: none;
+}
+
+header h2, main #portafolio h2{
+    font-size: 40px;
+}
+
+
+header .top-header{
+    padding: 27px 0px;
+}
+
+header .mid-header{
+    margin: 80px 0px;
+}
+
+header .bottom-header{
+    padding-bottom: 68px;
+}
+
+header .mid-header a{
+    display: block;
+    width: 222px;
+    padding: 20px  0px;
+    background-color: #8213de;
+    border-radius: 20px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 35px;
+    box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.18);
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 56px;
+
+}
+
+nav ul li a.activo{
+    color: #fcad6a;
+    font-weight: bold;
+}
+
+header .bottom-header #tarjeta{
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+header .bottom-header #tarjeta .texto{
+    width: 50%;
+
+}
+header .bottom-header #tarjeta .imagen{
+    width: 50%;
+}
+
+header .bottom-header #tarjeta .imagen img{
+    width: 100%;
+}
+
+header .bottom-header #tarjeta .texto h2{
+    color: #8213de;
+    margin: 0px 30px;
+}
+
+header .bottom-header #tarjeta .texto p{
+    margin: 0px 30px;
+    color: #555;
+}
+
+main #portafolio{
+    padding: 120px 0px;
+}
+
+main #portafolio h2{
+    color: #8213de;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+main #portafolio #portafolio-imgs .imgs{
+    gap: 20px;
+}
+
+footer{
+    padding: 50px 0px;
+    background-color: #e2d9ea;
+}
+
+footer nav ul li a{
+    color: #555;
+}
+
+@media screen and (max-width:480px) {
+    .flex{
+        display: block;
+    }
+    #portafolio-imgs{
+        text-align: center;
+    }
+    header nav{
+        display: none;
+    }
+    
+    header .top-header .flex{
+        display: flex;
+    }
+
+    
+
+    
+    header #menu-moviles{
+        display: block;
+       
+    }
+    header #menu-moviles a{
+        color: white;
+       
+    }
+}
+
+@media screen and (max-width:630px) {
+    .flex{
+        display: block;
+    }
+    #portafolio-imgs{
+        text-align: center;
+    }
+
+    header .bottom-header #tarjeta{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header .bottom-header #tarjeta .texto{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header .bottom-header #tarjeta .imagen{
+        background-size: contain;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+    header nav{
+        display: none;
+    }
+
+   h2, p{
+        text-align: center;
+    }
+
+    header .mid-header #texto{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    header .mid-header #ilustracion{
+        text-align: center;
+    }
+
+    header .mid-header a{
+        display: block;
+        width: 222px;
+        padding: 20px  0px;
+        background-color: #8213de;
+        border-radius: 20px;
+        color: inherit;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 35px;
+        box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.18);
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    
+    header #menu-moviles{
+        display: block;
+    }
+    
+    header #menu-moviles a{
+        color: white;
+        margin-right: 40px;
+    }
+     
+    header .top-header .flex{
+        display: flex;
+    }
+    
+    header .top-header #logo{
+        margin-left: 40px;
+    }
+    header .top-header #logo{
+        margin-left: 40px;
+    }
+
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    footer nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    footer nav ul a{
+        margin: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    footer nav ul a.activo{
+        margin: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
